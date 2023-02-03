@@ -1,24 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+const string cf = "codeforces";
+
+void solve() {
+    char c;
+    cin >> c;
+
+    if(cf.find(c) != string::npos) 
+        cout << "YES" << "\n";
+    else
+        cout << "NO" << "\n";
+}
+
 int main() {
-    cin.tie(0);
-    cout.tie(0);
     ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    
     int t; 
-    cin >> t;
-    string cf = "codeforces";
+    cin >> t;    
 
-    while(t--) {
-        char c;
-        cin >> c;
-
-        if(cf.find(c) != string::npos) 
-            cout << "YES" << "\n";
-        else
-            cout << "NO" << "\n";
-
-    }
+    while(t--) solve();
 
     return 0;
 }
